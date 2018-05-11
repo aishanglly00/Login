@@ -1,0 +1,223 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑","arial, helvetica, sans-serif";
+	font-size: 13px;
+}
+
+.header{
+	width: auto;
+	height: 60px;
+	background-color: #F4F2Ff;
+	border-bottom: 1px solid #DDDDDD;
+	overflow: hidden;
+}
+
+.header .header-logo{
+	margin-left: 40px;
+	line-height: 60px;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: 700;
+	color: #4F94CD; 
+}
+
+.header-link{
+	float: right;
+	margin-right: 40px;
+	line-height: 60px;
+}
+
+.content{
+	width: auto;
+	height: 440px;
+}
+
+.content .container{
+	width: 980px;
+	height: 400px;
+	margin: 70px auto;
+}
+.content .container .login-picture{
+	width: 460px;
+	height: 400px;
+	float: left;
+	color: #31B0D5;
+	background: url(../img/join1.jpg) no-repeat bottom right;
+}
+.content .container .login-picture .p1{
+	color: #101010;
+	line-height: 26px;
+}
+.content .container .login-picture .p2{
+	font-size: 50px;
+	line-height: 80px;
+	transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	background: linear-gradient(to right,#8c8c8c,white);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.content .container .login-wrap{
+	width: 340px;
+	height: 400px;
+	float: right;
+	border: 1px solid #ADADAD;
+	border-radius: 6px;
+	position: relative;
+}
+
+.content .container .login-wrap .login-pattern{
+	width: 100%;
+	height: 50px;
+	background-color: #f8f8ff;
+	border-bottom: 1px solid #ADADAD;
+	text-align: center;
+	line-height: 50px;
+}
+
+.content .container .login-wrap .login-pattern li{
+	display: inline;
+	font-size: 16px;
+	color: gray;
+	margin: 0 20px;
+	list-style: none;
+	cursor: pointer;
+}
+.content .container .login-wrap .login-pattern li.selected{
+	color: #000000;
+}
+#login-tab .login-default{
+	display: block;
+}
+.content .container .login-wrap .login-pattern li:hover{
+	color: #000000;
+}
+
+.content .container .login-wrap .login-QRcode{
+	width: 300px;
+	height: auto;
+	margin: 40px auto;
+	text-align: center;
+	display: none;
+}
+.content .container .login-wrap .login-QRcode .p1{
+	font-size: 15px;
+	font-weight: bold;
+}
+.content .container .login-wrap .login-QRcode .QRcode-content{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #ccc;
+	margin: 10px auto;
+	transition: 0.4s linear;
+	-webkit-transition: 0.3s linear;
+	-moz-transition: 0.4s linear;
+	-o-transition: 0.4s linear;
+	-ms-transition: 0.4s linear;
+}
+.content .container .login-wrap .login-QRcode .QRcode-content:hover{
+	transform: translateX(-60px);
+	-webkit-transform: translateX(-60px);
+	-moz-transform: translateX(-60px);
+	-o-transform: translateX(-60px);
+	-ms-transform: translateX(-60px);
+}
+.content .container .login-wrap .login-QRcode .QRcode-content img{
+	width: 140px;
+	height: 140px;
+	margin: 5px;
+	float: left;
+}
+
+.content .container .login-wrap .login-QRcode .QRcode-demo{
+	display: none;
+	float: right;
+	position: absolute;
+	width: 110px;
+	height: 170px;
+	bottom: 120px;
+	right: 40px;
+	background: url(../img/scan.jpg) no-repeat top;
+
+}
+.content .container .login-wrap .login-QRcode .QRcode-wrap a{
+	display: block;
+	width: 160px;
+	margin: 0 auto;
+	text-decoration: none;
+	line-height: 28px;
+	border-radius: 20px;
+	color: #8C8C8C;
+	background-color: #eee;
+}
+
+.content .container .login-wrap .login-message{
+	width: 300px;
+	height: auto;
+	margin: 34px auto;
+	display: none; 
+}
+.content .container .login-wrap .login-message #login-hint{
+	position: absolute;
+	width: 300px;
+	height: auto;
+	padding-left: 15px;
+	line-height: 34px;
+	top: 50px;
+	color: red;
+}
+.content .container .login-wrap .login-message .delUsername{
+	display: none; 
+	position: absolute;
+	background-color: #eee;
+	color: white;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center; 
+	border-radius: 10px;
+	margin: 7px 24px 7px auto;
+	right: 0;
+	top: 0;
+	font-size: 20px;
+	cursor: pointer;
+}
+.content .container .login-wrap .login-message .delUsername:hover{
+	background-color: #C0C0C0;
+}
+.content .container .login-wrap .login-help{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin-right: 30px;
+	margin-bottom: 15px;
+}
+
+
+.footer{
+	width: auto;
+	text-align: center;
+	background-color: #f8f8ff;
+	border-top: 1px solid #DDDDDD;
+}
+
+.footer a{
+	line-height: 40px;
+}
+
+.footer .badging{
+	color: gray;
+}
+
+.modal .modal-content .modal-body p{
+	display: none;
+}
+
+.modal .modal-content .modal-body p.caution{
+	display: block;
+}
